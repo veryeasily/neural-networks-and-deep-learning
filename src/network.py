@@ -77,6 +77,12 @@ class Network(object):
             delta_nabla_b, delta_nabla_w = self.backprop(x, y)
             nabla_b = [nb+dnb for nb, dnb in zip(nabla_b, delta_nabla_b)]
             nabla_w = [nw+dnw for nw, dnw in zip(nabla_w, delta_nabla_w)]
+        # print "nabla_w"
+        # print "asdf"
+        # print "nabla_w"
+        # print str(nabla_w)
+        # print "nabla_b"
+        # print str(nabla_b
         self.weights = [w-(eta/len(mini_batch))*nw
                         for w, nw in zip(self.weights, nabla_w)]
         self.biases = [b-(eta/len(mini_batch))*nb
@@ -112,6 +118,10 @@ class Network(object):
         for l in xrange(2, self.num_layers):
             z = zs[-l]
             sp = sigmoid_prime(z)
+            print "z"
+            print z
+            print "sp"
+            print sp
             delta = np.dot(self.weights[-l+1].transpose(), delta) * sp
             nabla_b[-l] = delta
             nabla_w[-l] = np.dot(delta, activations[-l-1].transpose())

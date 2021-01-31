@@ -1,0 +1,5 @@
+{
+  "python.languageServer": "Jedi",
+  "python.venvPath": "/Users/hi/Library/Caches/pypoetry/virtualenvs/neural-networks-and-deep-learning-m4DHNeCZ-py2.7",
+  "python.poetryPath": "/Users/hi/.poetry/bin/poetry"
+}
