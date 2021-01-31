@@ -4,12 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-# numpy = "^1.13.1"
 numpy = ">=1.13.1, <2.0.0"
-# Theano = "^0.7.0"
 Theano = ">=0.7.0, <0.8.0"
 
 [dev-packages]
+ipython = "*"
+pylint = "*"
+black = "==20.8b1"
 
 [requires]
 python_version = "3.8"
