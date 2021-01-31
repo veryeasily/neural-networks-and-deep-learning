@@ -1,4 +1,6 @@
 {
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/Users/hi/Library/Caches/pypoetry/virtualenvs/neural-networks-and-deep-learning-m4DHNeCZ-py3.8/bin/black"
+  "python.formatting.blackPath": "/Users/hi/Library/Caches/pypoetry/virtualenvs/neural-networks-and-deep-learning-m4DHNeCZ-py3.8/bin/black",
+  "python.poetryPath": "/Users/hi/.poetry/bin/poetry",
+  "python.pythonPath": "/Users/hi/Library/Caches/pypoetry/virtualenvs/neural-networks-and-deep-learning-m4DHNeCZ-py3.8/bin/python"
 }
