@@ -32,7 +32,7 @@ versions of Theano.
 
 #### Libraries
 # Standard library
-import cPickle
+import pickle
 import gzip
 
 # Third-party libraries
@@ -66,7 +66,9 @@ else:
 #### Load the MNIST data
 def load_data_shared(filename="../data/mnist.pkl.gz"):
     f = gzip.open(filename, 'rb')
-    training_data, validation_data, test_data = cPickle.load(f)
+    u = pickle._Unpickler(f)
+    u.encoding = 'latin1'
+    training_data, validation_data, test_data = u.load()
     f.close()
     def shared(data):
         """Place the data into shared variables.  This allows Theano to copy

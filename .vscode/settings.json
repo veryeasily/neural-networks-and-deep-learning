@@ -1,5 +1,4 @@
 {
-  "python.languageServer": "Jedi",
-  // "python.venvPath": "/Users/hi/Library/Caches/pypoetry/virtualenvs/neural-networks-and-deep-learning-m4DHNeCZ-py2.7",
-  // "python.poetryPath": "/Users/hi/.poetry/bin/poetry"
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "/Users/hi/Library/Caches/pypoetry/virtualenvs/neural-networks-and-deep-learning-m4DHNeCZ-py3.8/bin/black"
 }
